@@ -40,7 +40,7 @@ function aws-start-bosh-lites (){
 }
 
 function bosh-lite-ips (){
-  aws-running-vms.bash | egrep 'ami-31d7b554|ami-905e65f8' |grep running | grep_ip -o
+  aws-running-vms.bash | egrep 'ami-31d7b554|ami-905e65f8|aki-919dcaf8' |grep running | grep_ip -o | awk '{print NR "\011 " $1}'
 }
 
 function vagrant_ssh_setup () {

@@ -14,6 +14,8 @@ mkdir -p $1
  cd $1
  rm -rfv Vagrant .vagrant
  cd $1 && {
-    vagrant init cloudfoundry/bosh-lite
+    #vagrant init cloudfoundry/bosh-lite
+    git clone https://github.com/cloudfoundry/bosh-lite.git
+    cp bosh-lite/Vagrantfile .
     vagrant up --provider=aws
  }

@@ -1,0 +1,39 @@
+###### Thu Apr 28 17:51:50 2016
+###### Script   : '/Users/Lei/workspace/bosh-classroom/scripts/jsh_enable_ubuntu_c1oudc0w_login'
+###### Fanout   : 2
+###### User     : Lei
+###### Command line : jsh -e -w 54.234.217.244,54.242.145.96 -l ubuntu -s /Users/Lei/workspace/bosh-classroom/scripts/jsh_enable_ubuntu_c1oudc0w_login
+54.234.217.244: perl: warning: Setting locale failed.
+54.234.217.244: perl: warning: Please check that your locale settings:
+54.234.217.244: 	LANGUAGE = (unset),
+54.234.217.244: 	LC_ALL = (unset),
+54.234.217.244: 	LC_CTYPE = "UTF-8",
+54.234.217.244: 	LANG = "en_US.UTF-8"
+54.234.217.244:     are supported and installed on your system.
+54.234.217.244: perl: warning: Falling back to the standard locale ("C").
+54.234.217.244: ==== Diff /etc/shadow changes ====
+54.234.217.244: 25c25
+54.234.217.244: < ubuntu:!:16912:0:99999:7:::
+54.234.217.244: ---
+54.234.217.244: > ubuntu:$6$MPPLHATg$W7rPUGCiCw1DqpNwm5ysW1MTvqmYvmIeIXNXBVBJeTtEc4Dn8lFbwhjElrqdAcblDcE1U5DkXh2WUE1Knfefh0:16912:0:99999:7:::
+54.234.217.244: + [[ -f /tmp/sshd_config ]]
+54.234.217.244: no file /tmp/sshd_config - please copy it in
+54.234.217.244: + echo 'no file /tmp/sshd_config - please copy it in'
+
+54.242.145.96: perl: warning: Setting locale failed.
+54.242.145.96: perl: warning: Please check that your locale settings:
+54.242.145.96: 	LANGUAGE = (unset),
+54.242.145.96: 	LC_ALL = (unset),
+54.242.145.96: 	LC_CTYPE = "UTF-8",
+54.242.145.96: 	LANG = "en_US.UTF-8"
+54.242.145.96:     are supported and installed on your system.
+54.242.145.96: perl: warning: Falling back to the standard locale ("C").
+54.242.145.96: ==== Diff /etc/shadow changes ====
+54.242.145.96: 25c25
+54.242.145.96: < ubuntu:!:16912:0:99999:7:::
+54.242.145.96: ---
+54.242.145.96: > ubuntu:$6$MPPLHATg$W7rPUGCiCw1DqpNwm5ysW1MTvqmYvmIeIXNXBVBJeTtEc4Dn8lFbwhjElrqdAcblDcE1U5DkXh2WUE1Knfefh0:16912:0:99999:7:::
+54.242.145.96: + [[ -f /tmp/sshd_config ]]
+54.242.145.96: no file /tmp/sshd_config - please copy it in
+54.242.145.96: + echo 'no file /tmp/sshd_config - please copy it in'
+
